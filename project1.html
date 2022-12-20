@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+
+        .col{
+            color: white;
+        }
+
+        .box{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+        .p1{
+            color:white;
+            font-size:30px;
+        }
+
+        .d-none {
+                 display: block!important;
+                }
+        .p2{
+            text-align: center;
+            color: rgb(54, 26, 26);
+            font-size: 40px;
+            margin-top: 30px;
+            font-family: ui-sans-serif;
+
+        }
+        .p3{
+          margin-top: 20px;
+          font-size: 20px;
+          font-family: ui-sans-serif;
+        }
+        .p4{
+          margin-top: 50px;
+        }
+        .img1{
+          opacity: 1;
+          display: block;
+          transition: .2s ease;
+          backface-visibility: hidden;
+          border: 0px;
+        }
+        .img1:hover{
+          opacity: 0.7;
+        }
+        .p5{
+          color: grey;
+          font-size: 20px;
+          text-align: center;
+        }
+
+        .btn1{
+       margin-left: 140px;
+        }
+
+        .p6{
+          text-align: center;
+          color: red;
+        }
+
+        .p7{
+          text-align: center;
+          color: grey;
+          font-size: 30px;
+          font-family: cursive;
+        }
+        .p8{
+          text-align: center;
+          font-size: 20px;
+          font-family: cursive;
+          color: red;
+        }
+
+        .p9{
+          font-size: 16px;
+          text-align: start;
+          color: white;
+          margin-top: 17px;
+        }
+
+        .head{
+          color: white;
+          font-weight: 300;
+          margin-top: 10px;
+        }
+        .p10{
+          color: grey;
+        }
+        .p11{
+          color: white;
+          text-align: center;
+          font-size: 20px;
+          margin-top: 10px;
+        }
+.navbar-nav{   
+
+   --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    /* border: 1px solid red; */
+  }
+
+
+  .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-nav-link-padding-x: 1rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+    --bs-navbar-toggler-border-radius: 0.375rem;
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);}
+   
+/* .li{
+border: 1px solid blue;
+} */
+
+.form-control {
+  margin-left: 50PX};
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/b1.jpg" style="width: 150px;" height="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="project1.html">
+                    <p class="col">Home</p></a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">
+                    <p class="col">About us</p></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">
+                    <p class="col">Contact</p></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="shop.html">
+                    <p class="col">Shop in Delhi</p></a>
+              </li>
+
+              
+              </li>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                    <p class="col">Vaccation Plans</p></a>
+              </li>
+
+            <i class="fa-regular fa-user"></i>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success m2" type="submit">Search</button>
+          
+            </form>
+        </ul>
+        </div>
+        </div>
+        </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/india.jpg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>India Gate</h1>
+              <p class="p1">It is a gate in the form of an arc.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/baba.jpg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Gurudwara Bangla Sahib</h1>
+              <p>Gurudwara Damdama Sahib marks the meeting site of Guru Gobind Singh”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/taj mahal.jpg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>THE RED FORT</h1>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+            <h5 class="p2">INTRODUCTION </h5>
+            <div class="container fluid">
+            <div class="row bg-info" >
+             Delhi,[a] officially the National Capital Territory (NCT) of Delhi,
+            is a city and a union territory of India containing New Delhi,
+            the capital of India. Straddling the Yamuna river, primarily its western
+            or right bank, Delhi shares borders with the state of Uttar Pradesh in the
+            east and with the state of Haryana in the remaining directions.
+            The NCT covers an area of 1,484 square kilometres (573 sq mi).[5] According to the 2011 census,
+            Delhi's city proper population was over 11 million,[6][14] while the NCT's population
+            was about 16.8 million.[7] Delhi's urban agglomeration, which includes the satellite
+            cities of Ghaziabad, Faridabad, Gurgaon and Noida in an area known as the National Capital Region 
+            (NCR), has an estimated population of over 28 million,
+            making it the largest metropolitan area in India and the second-largest in the world (after Tokyo).[8]
+
+            </div>
+          </div>
+      <h5 class="p2">Delhi Darshan</h5>
+      
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 box img1">
+            <img src="../images/lotus.jpg.jpg" height="600px" width="  
+            100%" >
+            
+            </div>
+<div class="col-md-6">
+  <h1>The Lotus Temple</h1>
+  <p class="p3">The Lotus Temple, located in Delhi, India, is a Baháʼí House
+  of Worship that was dedicated in December 1986. Notable for its flowerlike shape,
+  it has become a prominent attraction in the city. Like all other Bahá’í Houses of Worship, 
+  the Lotus Temple is open to all, regardless of religion or any other qualification.
+  The building is composed of 27 free-standing marble-clad "petals" arranged in clusters
+  of three to form nine sides,[1] with nine doors opening onto a central hall with a height
+  of slightly over 34 meters[1] and a capacity of 1,300 people.</p>
+  <button type="button" class="btn btn-danger">Read more</button>
+
+</div>
+</div>
+</div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+<h1 class="p4">THE QUTAB MINAR</h1>
+<p class="p3">The Qutb Minar, also spelled Qutub Minar and Qutab Minar,
+ is a minaret and "victory tower" that forms part of the Qutb complex,
+ which lies at the site of Delhi’s oldest fortified city, Lal Kot,
+founded by the Tomar Rajputs.[3] It is a UNESCO World Heritage
+Site in the Mehrauli area of South Delhi, India.[4][5] 
+It is one of the most visited tourist spots in the city,
+ mostly built between 1199 and 1220</p>
+ <button type="button" class="btn btn-danger">Read more</button>
+          </div>
+  <div class="col-md-6 mt-3  img1">
+    <img src="images/qutab.jpg" width="100%" height="500px">
+  </div>
+  </div>
+  </div>
+
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-6 img1">
+    <img src="images/jama.jpg.jpg" width="100%" height="500px">
+  </div>
+  <div class="col-md-6 mt-3">
+    <h1>THE JAMA MASJID</h1>
+    <p class="p3">The Masjid-i-Jehan-Numa (lit. 'World-reflecting Mosque'),
+       commonly known as the Jama Masjid of Delhi,
+        is one of the largest mosques in India.[1]
+      It was built by the Mughal Emperor Shah Jahan between 1650 and 1656,
+       and inaugurated by its first Imam, Syed Abdul Ghafoor Shah Bukhari.
+      Situated in the Mughal capital of Shahjahanabad (today Old Delhi),
+      it served as the imperial mosque of the Mughal emperors
+      until the demise of the empire in 1857. The Jama Masjid was regarded 
+      as a symbolic node of Islamic power across India, well into the colonial era.
+       It was also a site of political significance during several key periods of British rule.</p>
+       <button type="button" class="btn btn-danger">Read more</button>
+    </div>
+  </div>
+  
+  </div>
+    
+<h5 class="p2">HOTELS AND RESTURANTS</h5>
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 img1">
+    <img src="../images/hotel.jpg" width="100%" height="300px">
+    <h3 class="p5">THE TAJ PALACE</h3>
+    <button type="button" class="btn btn-danger btn1" >Book now</button>
+  </div>
+  <div class="col-md-4 img1">
+  <img src="../images/hotel2.jpg" width="100%" height="300px">
+  <h3 class="p5">THE NOVOTEL</h3>
+  <button type="button" class="btn btn-danger btn1" >Book now</button>
+  </div>
+  <div class="col-md-4 img1">
+  <img src="images/hotel3.jpg" width="100%" height="300px" >
+  <h3 class="p5">THE Radiscca</h3>
+  <button type="button" class="btn btn-danger btn1" >Book now</button>
+  </div>
+  </div>
+</div>
+
+<h5 class="p2">OUR PACAKAGE</h5>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-4">
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/single.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title p6">Single person</h5>
+        <p class="card-text">Lets get a trip</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">3 days 2 night</li>
+        <li class="list-group-item">A luxary ride</li>
+        <li class="list-group-item">4 star hotel stay</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="p8">Price=11999/-</a>
+      </div>
+      <button type="button" class="btn btn-danger  " >Book now</button>
+    </div>
+  </div>
+  <div class="col-md-4">
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/family.jpg" class="card-img-top" alt="..." height="200px">
+      <div class="card-body">
+        <h5 class="card-title p6">A family trip</h5>
+        <p class="card-text">Lets get a trip with your family</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">3 days 2 night</li>
+        <li class="list-group-item">A luxary ride</li>
+        <li class="list-group-item">4 star hotel stay</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="p8">Price=21999/-</a>
+        
+      </div>
+      <button type="button" class="btn btn-danger " >Book now</button>
+    </div>
+
+    
+    
+</div>
+<div class="col-md-4">
+
+  <div class="card" style="width: 18rem;">
+    <img src="images/honey.jpg" class="card-img-top" alt="..." height="180px">
+    <div class="card-body">
+      <h5 class="card-title p6">Honeymoon</h5>
+      <p class="card-text">Lets enjoy your trip with your partner</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">3 days 2 night</li>
+      <li class="list-group-item">A luxary ride</li>
+      <li class="list-group-item">4 star hotel stay</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="p8">Price=21999/-</a>
+      
+    </div>
+    <button type="button" class="btn btn-danger " >Book now</button>
+  </div>
+</div>
+
+<h2  class="p2">MOST VISITED PLACE </h2>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4  img1">
+  <img src="images/indiagate.jpg" width="100%" height="300px">
+  <p class="p7">India Gate</p>
+  </div>
+  <div class="col-md-4  img1">
+    <img src="images/jama.jpg" width="100%" height="300px">
+    <p class="p7">Jama Masjid</p>
+    </div>
+    <div class="col-md-4  img1">
+      <img src="images/gurudwara.jpg" width="100%" height="300px">
+      <p class="p7">Gurudwara Bangla Sahib</p>
+      </div>
+      
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4  img1">
+  <img src="images/cp.jpg" width="100%" height="300px">
+  <p class="p7">Connaught Palace</p>
+  </div>
+  <div class="col-md-4  img1">
+    <img src="images/humayu.jpg" width="100%" height="300px">
+    <p class="p7"> Humayun’s Tomb</p>
+    
+    </div>
+    <div class="col-md-4  img1">
+      <img src="images/garden.jpg" width="100%" height="300px">
+      <p class="p7"> Mughal Garden</p>
+      </div>
+      
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 img1">
+  <img src="images/jantar.jpg" width="100%" height="300px">
+  <p class="p7"> Jantar Mantar</p>
+  </div>
+  <div class="col-md-4  img1">
+    <img src="../images/chandni.jpg" width="100%" height="300px">
+    <p class="p7"> Chandani Chowk</p>
+    </div>
+    <div class="col-md-4  img1">
+      <img src="../images/oldfort.jpg" width="100%" height="300px">
+      <p class="p7"> The Old Fort</p>
+      </div>
+      
+  </div>
+</div>
+
+<div class="footer" style="background-color: #333;">
+<div class="row justify-content-evenly">
+  
+<div class="div col-md-4" style=" height: 300px">
+  <img src="../images/delhi.jpg" width="50%">
+  <p class="p9">Tourist visiting the city generally think that,
+     Delhi is a single dot on the map of India. But the capital of
+      India is far far big than that dot. Believe us Delhi Darshan
+       has a lot to show,
+     starting from Historical Places, Religious Places,
+      Monuments, Forts, Museums, Markets and so on.</p>
+</div>
+<div class="div col-md-2 tik">
+  <ul class="limar">
+    <h2 class="head">Book Now</h2>
+    <div class="mrginil p10">
+      <li><a href="#" class="p10">Flight</a></li>
+      <li><a href="#" class="p10">Hotel</a></li>
+      <li><a href="#" class="p10">Tour</a></li>
+      <li><a href="#" class="p10">Car rent</a></li>
+      <li><a href="#" class="p10">cruise</a></li>
+    </div>
+  </ul>
+</div>
+<div class="div col-md-2 tik">
+  <ul class="limar">
+    <h2 class="head">Top Deals</h2>
+    <div class="mrginil" >
+      <li><a href="#" class="p10">Edina Hotels</a></li>
+      <li><a href="#"class="p10">Quietly Suites</a></li>
+      <li><a href="#" class="p10">The Taj palace</a></li>
+      <li><a href="#" class="p10">The vind villa</a></li>
+      <li><a href="#" class="p10">Hotel Epikk</a></li>
+    </div>
+  </ul>
+</div>
+<div class="div col-md-2 tik">
+  <ul class="limar">
+    <h2 class="head">Blog post</h2>
+    <div class="mrginil p10">
+      <li>The Ultimate Packing List For Female Travelers</li>
+      <li>How these 5 People Found The path to their dream Trip</li>
+      <li>A Definitive Guide to the Best Dining and Drinking Venues in the city</li>
+      
+    </div>
+  </ul>
+</div>
+<div class="row bg-dark">
+  <p class="p11">Contact us on:-travelwithdriver@gmail.com +91 8900001118</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>

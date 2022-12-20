@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<style>
+  .col{
+            color: white;
+        }
+.p1{
+    text-align: center;
+    font-size: 60px;
+    color: blue;
+    margin-top: 30px;
+    font-family: monospace;
+}
+
+.p2{
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.p3{
+    text-align: center;
+    font-size: 30px;
+}
+.p9{
+          font-size: 16px;
+          text-align: start;
+          color: white;
+          margin-top: 17px;
+        }
+
+.head{
+          color: white;
+          font-weight: 300;
+          margin-top: 10px;
+        }
+        .p10{
+          color: grey;
+        }
+        .p11{
+          color: white;
+          text-align: center;
+          font-size: 20px;
+          margin-top: 10px;
+        }
+    .navbar-nav{   
+
+--bs-nav-link-padding-x: 0;
+ --bs-nav-link-padding-y: 0.5rem;
+ --bs-nav-link-font-weight: ;
+ --bs-nav-link-color: var(--bs-navbar-color);
+ --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+ --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+ display: flex;
+ flex-direction: column;
+ padding-left: 0;
+ margin-bottom: 0;
+ list-style: none;
+ /* border: 1px solid red; */
+}
+
+
+.navbar {
+ --bs-navbar-padding-x: 0;
+ --bs-navbar-padding-y: 0.5rem;
+ --bs-navbar-color: rgba(0, 0, 0, 0.55);
+ --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+ --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+ --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+ --bs-navbar-brand-padding-y: 0.3125rem;
+ --bs-navbar-brand-margin-end: 1rem;
+ --bs-navbar-brand-font-size: 1.25rem;
+ --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+ --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+ --bs-navbar-nav-link-padding-x: 1rem;
+ --bs-navbar-toggler-padding-y: 0.25rem;
+ --bs-navbar-toggler-padding-x: 0.75rem;
+ --bs-navbar-toggler-font-size: 1.25rem;
+ --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+ --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+ --bs-navbar-toggler-border-radius: 0.375rem;
+ --bs-navbar-toggler-focus-width: 0.25rem;
+ --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+ position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);}
+
+/* .li{
+border: 1px solid blue;
+} */
+
+.img1{
+  
+    width: 20% ; height: 70px; margin-left: 30%;"}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/b1.jpg" style="width: 150px;" height="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="project1.html">
+                    <p class="col">Home</p></a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                    <p class="col">About us</p></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">
+                    <p class="col">Contact</p></a>
+              </li>
+
+              <!-- <li class="nav-item dropdown"> -->
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="shop.html">
+                      <p class="col">Shop in Delhi</p></a>
+                </li>
+  
+                <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">family trip</a></li>
+                  <li><a class="dropdown-item" href="#">Office Tour</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul> -->
+              </li>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                    <p class="col">Vaccation Plans</p></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="col"> Dropdown</span></a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <i class="fa-regular fa-user"></i>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/lotus.jpg.jpg" class="d-block w-100" alt="..." height="500px">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-12  ">
+           <p class="p1"> About Delhi</p>
+
+           <p class="p2">Delhi Tourism, a government undertaking facilitating tourism since 1975 will take you to a guided tour of
+             the Delhi through this website which explores the wonders of this city be it its heritage, the art and crafts,
+              the diverse cuisine and culture.
+
+            A symbol of the country’s rich past and thriving present, 
+            Delhi is a city where ancient and modern blend seamlessly together. It is a place that 
+            not only touches your pulse but even fastens it to a frenetic speed. Home to millions of dreams,
+             the city takes on unprecedented responsibilities of realizing dreams bringing people closer and 
+             inspiring their thoughts.
+            
+            Just a century ago, the British moved the seat of their empire from Kolkata to Delhi. And it has been 
+            the Capital of India ever since. Now a thriving, cosmopolitan metro, the city has much to celebrate as
+             it has already reached the milestone of completing 100 years as a Capital. With a history that goes back
+              many centuries, Delhi showcases an ancient culture and a rapidly modernising country. Dotted with monuments
+               there is much to discover here. The seat of many powerful empires in the past, its long history can be
+                traced in its many carefully-preserved monuments, ancient forts and tombs.
+            
+            All this is combined with the best features of a modern city such as a metro system,
+             bustling markets and fabulous eating places. The past and the present meld seamlessly together,
+              making centuries-old monuments a part of the city’s daily life. Delhi is very much a history’s child.
+               The story of the city is as old as the epic Mahabharata, when the town was known as Indraprastha, where Pandavas used to live. Over the centuries, eight more cities came alive</p>
+        </div>
+
+        </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+              <img src="images ic//ab.png" class="card-img-top img1">
+              <div class="card-body">
+                <h5 class="card-title p3">Delhi Today</h5>
+                <p class="card-text">Modern Delhi, popularly known as Lutyens' Delhi, bears a striking contrast to Old Delhi with respect to architecture, building materials and layout. However, Modern Delhi itself dates back to over a century when the British shifted their capital from Calcutta to Delhi.</p>
+                <button type="button" class="btn btn-danger">Read more</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images ic/ab2.png" class="card-img-top img1">
+              <div class="card-body">
+                <h5 class="card-title p3">History of Delhi</h5>
+                <p class="card-text">Delhi, the capital of India has a strong historical background. It was ruled by some of the most powerful emperors in Indian history. The history of the city is as old as the epic Mahabharata. The town was known as Indraprastha, where Pandavas used to live.</p>
+                <button type="button" class="btn btn-danger ">Read more</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images ic/ab3.png" class="card-img-top img1" >
+              <div class="card-body">
+                <h5 class="card-title p3">Culture Of Delhi</h5>
+                <p class="card-text">Delhi is the traditional and present day capital of India.Yamuna in the east and spurs from the Aravali range in the west and south. Delhi is not only the largest commercial centre in Northern India, but also the largest centre of small industries.</p>
+                <button type="button" class="btn btn-danger ">Read more</button>
+               
+              </div>
+            </div>
+          </div>
+          adjacent to Indraprastha: Lal Kot, Siri, Dinpanah, Quila Rai Pithora, Ferozabad, Jahanpanah, Tughlakabad and Shahjahanabad. Many empires rose to the heights of their power and were destroyed here. Among the prominent dynasties which made Delhi their capital were the Tughlaqs, the Khiljis and the Mughals.
+
+Even today, one can have a fascinating glimpse into the past in Old Delhi, with its labyrinth of narrow lanes, old havelis, and colourful bazaars. Rickshaws wind their way through this crowded, bustling capital of the Mughals, where life continues, much as it did hundreds of years ago. It is home to three World Heritage monuments—Qutub Minar, Red Fort and Humayun’s Tomb that have survived many centuries, and give an idea of architectural wonders created by emperors in the past. Central Delhi, with its tree-lined avenues, imposing structures and buildings such as the Rashtrapati Bhavan, Parliament House and India Gate, reflect Delhi’s colonial past. A number of museums provide a glimpse into the country’s fascinating history.
+
+But the modern Delhi has a lot more to offer. Delhi has a modern, well-planned and extensive Metro network that connects all corners of Delhi; this network is still growing. New roadways and flyovershave improved connectivity, the latest of which is the Signature Bridge, an ambitious project of Delhi Tourism, which is under construction at Wazirabad – it promises to be a landmark.
+
+New malls and entertainment centres jostle for space with a growing number of brand new hospitals, residential complexes, and sporting facilities. Delhi is now a dream destination for those seeking expert medical attention and superior OPD and IPD facilities. Thanks to the advent of the Commonwealth Games, there are world-class stadia like the revamped Nehru Stadium that can be accessed by one and all, throughout the year. All of this has been developed and sustained while maintaining Delhi’s green cover, a unique feature that distinguishes this truly global metropolis from other cities in the world where the tree line is subdued by skyscrapers. Besides the Metro, which connects all of Delhi’s landmarks to the city centre as well as most suburbs, the new, a fun way to explore Delhi is by booking a HOHO bus tour. Hop on- Hop off buses, better known as HO – HOs, have been introduced by Delhi Tourism for visitors who wish to tour the city in a single day. With so many transport options, visitors now have the ability to go wherever they want – and there are a lot of places to see and a lot of things to do here. There are the age old-yet-perfectly preserved, sprawling heritage complexes featuring architecture from the Mughal and Tughlaq periods.
+
+
+<div class="footer" style="background-color: #333;">
+    <div class="row justify-content-evenly">
+      
+    <div class="div col-md-4" style=" height: 300px">
+      <img src="../images/delhi.jpg" width="50%">
+      <p class="p9">Tourist visiting the city generally think that,
+         Delhi is a single dot on the map of India. But the capital of
+          India is far far big than that dot. Believe us Delhi Darshan
+           has a lot to show,
+         starting from Historical Places, Religious Places,
+          Monuments, Forts, Museums, Markets and so on.</p>
+    </div>
+    <div class="div col-md-2 tik">
+      <ul class="limar">
+        <h2 class="head">Book Now</h2>
+        <div class="mrginil p10">
+          <li><a href="#" class="p10">Flight</a></li>
+          <li><a href="#" class="p10">Hotel</a></li>
+          <li><a href="#" class="p10">Tour</a></li>
+          <li><a href="#" class="p10">Car rent</a></li>
+          <li><a href="#" class="p10">cruise</a></li>
+        </div>
+      </ul>
+    </div>
+    <div class="div col-md-2 tik">
+      <ul class="limar">
+        <h2 class="head">Top Deals</h2>
+        <div class="mrginil" >
+          <li><a href="#" class="p10">Edina Hotels</a></li>
+          <li><a href="#"class="p10">Quietly Suites</a></li>
+          <li><a href="#" class="p10">The Taj palace</a></li>
+          <li><a href="#" class="p10">The vind villa</a></li>
+          <li><a href="#" class="p10">Hotel Epikk</a></li>
+        </div>
+      </ul>
+    </div>
+    <div class="div col-md-2 tik">
+      <ul class="limar">
+        <h2 class="head">Blog post</h2>
+        <div class="mrginil p10">
+          <li>The Ultimate Packing List For Female Travelers</li>
+          <li>How these 5 People Found The path to their dream Trip</li>
+          <li>A Definitive Guide to the Best Dining and Drinking Venues in the city</li>
+          
+        </div>
+      </ul>
+    </div>
+    <div class="row bg-dark">
+      <p class="p11">Contact us on:-travelwithdriver@gmail.com +91 8900001118</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+       
+</body>
+</html>
